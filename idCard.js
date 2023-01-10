@@ -154,5 +154,3 @@ function getIdcard() {
   }
   $('#IDCard').val(idcard);
 }
-
-console.log(getIdcard()) // 身份证号

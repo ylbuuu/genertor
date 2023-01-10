@@ -81,6 +81,21 @@
         </div>
       </form>
     </div>
+    <!---------姓名生成------  -->
+    <div class="panel-body" id="nameDiv">
+      <form class="form-inline " method="get">
+       <div class="form-group">
+         <div class="col-sm-2"></div>
+         <label class="col-sm-2 control-label">姓名</label>
+         <div class="col-sm-3">
+           <input type="text" class="form-control" id='name'>
+         </div>
+       </div>
+        <div class="form-group">
+           <button type="button" class="btn btn-success" onclick="copyVal('name');">复制</button>
+       </div>
+     </form>
+   </div>
   <!-----------------组织机构代码生成-  -->
   
     <div class="panel-body" id="orgCodeDiv">
@@ -143,6 +158,21 @@
         </div>
       </form>
     </div>
+    <!---------邮箱号生成------  -->
+    <div class="panel-body" id="emailDiv">
+      <form class="form-inline " method="get">
+       <div class="form-group">
+         <div class="col-sm-2"></div>
+         <label class="col-sm-2 control-label">邮箱号</label>
+         <div class="col-sm-3">
+           <input type="text" class="form-control" id='email'>
+         </div>
+       </div>
+        <div class="form-group">
+           <button type="button" class="btn btn-success" onclick="copyVal('email');">复制</button>
+       </div>
+     </form>
+   </div>
 
   </div>
   </div>
@@ -155,6 +185,8 @@
       generatorCreditCode()
       generatorPhoneNo()
       generatorBankAccount()
+      generatorEmail()
+      generatorName()
   }
   function copyVal(id){
     var a = document.getElementById(id).value;
@@ -177,6 +209,8 @@
 <script type="text/javascript" src="creditCode.js"></script><!--统一社会信用代码生成-->
 <script type="text/javascript" src="phoneNo.js"></script><!--手机号码生成-->
 <script type="text/javascript" src="bankaccount.js"></script><!--银行卡号生成-->
+<script type="text/javascript" src="email.js"></script><!--邮箱生成-->
+<script type="text/javascript" src="name.js"></script><!--姓名生成-->
 <script type="text/javascript" src="copy.js"></script><!--copy-->
 
 
