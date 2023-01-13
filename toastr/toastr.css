@@ -82,6 +82,7 @@ button.toast-close-button {
   bottom: 12px;
   left: 12px;
 }
+.custom { width: 160px !important; min-width: 160px;}
 .toast-center-center {
   top: 5%;
   left: 50%;
